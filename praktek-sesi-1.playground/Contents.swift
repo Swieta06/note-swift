@@ -1,5 +1,5 @@
 import UIKit
-print("=========== VARIABLE & CONTSTAN ===========")
+print("=========== 1. VARIABLE & CONTSTAN ===========")
 /*
  Latihan 1
  
@@ -89,7 +89,7 @@ var billMessage="Total price you should pay is IDR "+String(totalPrice)
 print(billMessage)
 print("=====================")
 
-print("\n=========== IF STATEMENT ===========")
+print("\n=========== 2. IF STATEMENT ===========")
 /***Latihan 1:**
  
  Sebagai Barista shift pagi, Rana harus bangun sebelum jam 6 pagi karena Kopi Surgawi akan dibuka pada jam 7 pagi.
@@ -147,7 +147,7 @@ default:
     print("Over resting")
 }
 
-print("=========== FOR IN LOOPS ===========")
+print("=========== 3. FOR IN LOOPS ===========")
 /***Latihan 1**
  
  **Diketahui:**
