@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kmj-gB-wTn">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Emoji Data-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Latihan3_TableViewUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JQI-2b-KMB">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="emoji_cell" rowHeight="58" id="5yI-rr-gVc" customClass="EmojiViewCell" customModule="Latihan3_TableViewUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5yI-rr-gVc" id="ymS-4R-5S5">
+                                            <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😃" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3CW-Ca-A06">
+                                                    <rect key="frame" x="20" y="12" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="U9E-gg-fY4"/>
+                                                        <constraint firstAttribute="width" constant="36" id="c5E-Pa-Qvt"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHh-aZ-mmb">
+                                                    <rect key="frame" x="68" y="19.666666666666668" width="266.66666666666669" height="21.000000000000004"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3CW-Ca-A06" firstAttribute="top" secondItem="ymS-4R-5S5" secondAttribute="top" constant="12" id="7Q1-OP-fH6"/>
+                                                <constraint firstItem="bHh-aZ-mmb" firstAttribute="leading" secondItem="3CW-Ca-A06" secondAttribute="trailing" constant="12" id="HRu-Bq-Vui"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3CW-Ca-A06" secondAttribute="bottom" priority="750" constant="12" id="NtL-bq-8XT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bHh-aZ-mmb" secondAttribute="trailing" constant="20" id="OiY-eO-Mvx"/>
+                                                <constraint firstItem="bHh-aZ-mmb" firstAttribute="centerY" secondItem="3CW-Ca-A06" secondAttribute="centerY" id="RFd-Cs-RrT"/>
+                                                <constraint firstItem="3CW-Ca-A06" firstAttribute="leading" secondItem="ymS-4R-5S5" secondAttribute="leading" constant="20" id="VO1-gk-LcQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="EmojiLable" destination="3CW-Ca-A06" id="Igw-dy-VUs"/>
+                                            <outlet property="titleLabel" destination="bHh-aZ-mmb" id="Oh4-z8-tkq"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JQI-2b-KMB" secondAttribute="bottom" id="AZe-lA-M1o"/>
+                            <constraint firstItem="JQI-2b-KMB" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S9Q-wV-RgY"/>
+                            <constraint firstItem="JQI-2b-KMB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zj1-Qw-OFC"/>
+                            <constraint firstItem="JQI-2b-KMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zi7-78-llD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Emoji Data" id="YNj-jp-DX2"/>
+                    <connections>
+                        <outlet property="TableView" destination="JQI-2b-KMB" id="QEV-vI-feG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014.5038167938931" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qih-0i-nPM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kmj-gB-wTn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="red-HD-64H">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Cpz-Rp-bqs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4k-Ur-HBF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87.786259541984734" y="3.5211267605633805"/>
+        </scene>
+        <!--Emoji View Controller-->
+        <scene sceneID="3Nz-X8-m7d">
+            <objects>
+                <viewController storyboardIdentifier="Emoji" id="yY7-kD-Zsz" customClass="EmojiViewController" customModule="Latihan3_TableViewUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Udx-cv-Njp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="baN-xX-huq">
+                                <rect key="frame" x="16" y="117.00000000000001" width="361" height="198.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBZ-KR-evm">
+                                        <rect key="frame" x="137.66666666666666" y="0.0" width="86" height="95.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artis pallette" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VX-Eb-KTh">
+                                        <rect key="frame" x="105.66666666666669" y="111.66666666666666" width="150" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A palette used mby an artist when painting, to store and mix paint colors" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ps6-4z-Dcp">
+                                        <rect key="frame" x="4.3333333333333428" y="157.66666666666669" width="352.33333333333326" height="40.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YRc-F1-1cc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="baN-xX-huq" secondAttribute="trailing" constant="16" id="Iku-QE-Lut"/>
+                            <constraint firstItem="baN-xX-huq" firstAttribute="top" secondItem="YRc-F1-1cc" secondAttribute="top" constant="58" id="Tan-ng-xVc"/>
+                            <constraint firstItem="baN-xX-huq" firstAttribute="leading" secondItem="YRc-F1-1cc" secondAttribute="leading" constant="16" id="fNc-YX-eju"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLable" destination="Ps6-4z-Dcp" id="h9U-UK-kxY"/>
+                        <outlet property="emojiLable" destination="MBZ-KR-evm" id="WHV-NR-1oh"/>
+                        <outlet property="nameLable" destination="6VX-Eb-KTh" id="jHA-lV-zmv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lf6-it-4Ua" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="651"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

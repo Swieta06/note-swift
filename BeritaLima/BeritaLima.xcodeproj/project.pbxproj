@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		520784B529D292BD0080CAA7 /* reading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520784B429D292BD0080CAA7 /* reading.storyboard */; };
+		520784C029D293430080CAA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784B929D293430080CAA7 /* ViewController.swift */; };
+		520784C129D293430080CAA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520784BA29D293430080CAA7 /* Main.storyboard */; };
+		520784C229D293430080CAA7 /* TopNewsListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784BD29D293430080CAA7 /* TopNewsListViewCell.swift */; };
+		520784C329D293430080CAA7 /* BannerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784BE29D293430080CAA7 /* BannerViewCell.swift */; };
+		520784C429D293430080CAA7 /* TopNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784BF29D293430080CAA7 /* TopNewsCollectionViewCell.swift */; };
+		520784C729D294990080CAA7 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784C629D294990080CAA7 /* News.swift */; };
+		520784C929D294DB0080CAA7 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784C829D294DB0080CAA7 /* NewsResponse.swift */; };
+		520784CB29D298FC0080CAA7 /* MediaMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784CA29D298FC0080CAA7 /* MediaMetadata.swift */; };
+		520784CD29D29AD70080CAA7 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784CC29D29AD70080CAA7 /* Media.swift */; };
+		520784D029D2C5E00080CAA7 /* NewsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784CF29D2C5E00080CAA7 /* NewsProvider.swift */; };
+		520784D229D2CBEB0080CAA7 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784D129D2CBEB0080CAA7 /* NewsViewCell.swift */; };
+		520784D429D2CC180080CAA7 /* NewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 520784D329D2CC180080CAA7 /* NewsViewCell.xib */; };
+		520784F629D3DE360080CAA7 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784F529D3DE360080CAA7 /* ReadingViewController.swift */; };
+		520784F929D3E4780080CAA7 /* BeritaLima.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 520784F729D3E4780080CAA7 /* BeritaLima.xcdatamodeld */; };
+		520784FB29D3E7990080CAA7 /* ReadingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784FA29D3E7990080CAA7 /* ReadingRepository.swift */; };
+		520784FE29D40E180080CAA7 /* NotificationExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520784FD29D40E180080CAA7 /* NotificationExtention.swift */; };
+		5256648F29D1484F00CF5593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256648E29D1484F00CF5593 /* AppDelegate.swift */; };
+		5256649129D1484F00CF5593 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5256649029D1484F00CF5593 /* SceneDelegate.swift */; };
+		5256649829D1485200CF5593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5256649729D1485200CF5593 /* Assets.xcassets */; };
+		5256649B29D1485200CF5593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5256649929D1485200CF5593 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		520784B429D292BD0080CAA7 /* reading.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = reading.storyboard; sourceTree = "<group>"; };
+		520784B929D293430080CAA7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		520784BB29D293430080CAA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		520784BD29D293430080CAA7 /* TopNewsListViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNewsListViewCell.swift; sourceTree = "<group>"; };
+		520784BE29D293430080CAA7 /* BannerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerViewCell.swift; sourceTree = "<group>"; };
+		520784BF29D293430080CAA7 /* TopNewsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopNewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		520784C629D294990080CAA7 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		520784C829D294DB0080CAA7 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		520784CA29D298FC0080CAA7 /* MediaMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaMetadata.swift; sourceTree = "<group>"; };
+		520784CC29D29AD70080CAA7 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		520784CF29D2C5E00080CAA7 /* NewsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsProvider.swift; sourceTree = "<group>"; };
+		520784D129D2CBEB0080CAA7 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = "<group>"; };
+		520784D329D2CC180080CAA7 /* NewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewCell.xib; sourceTree = "<group>"; };
+		520784F529D3DE360080CAA7 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		520784F829D3E4780080CAA7 /* BeritaLima.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeritaLima.xcdatamodel; sourceTree = "<group>"; };
+		520784FA29D3E7990080CAA7 /* ReadingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRepository.swift; sourceTree = "<group>"; };
+		520784FD29D40E180080CAA7 /* NotificationExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtention.swift; sourceTree = "<group>"; };
+		5256648B29D1484F00CF5593 /* BeritaLima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeritaLima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5256648E29D1484F00CF5593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5256649029D1484F00CF5593 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5256649729D1485200CF5593 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5256649A29D1485200CF5593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5256649C29D1485200CF5593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5256648829D1484F00CF5593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5203EC4629D2915100953549 /* reading */ = {
+			isa = PBXGroup;
+			children = (
+				524DCADC29D2921D003F2F16 /* Controller */,
+			);
+			path = reading;
+			sourceTree = "<group>";
+		};
+		5203EC4729D2916700953549 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				520784B829D293430080CAA7 /* Controllers */,
+				520784BC29D293430080CAA7 /* Views */,
+			);
+			name = News;
+			path = reading/News;
+			sourceTree = "<group>";
+		};
+		5203EC4829D2918900953549 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5203EC4729D2916700953549 /* News */,
+				5203EC4629D2915100953549 /* reading */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		520784B829D293430080CAA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				520784BA29D293430080CAA7 /* Main.storyboard */,
+				520784B929D293430080CAA7 /* ViewController.swift */,
+			);
+			name = Controllers;
+			path = BeritaLima/Modules/News/Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		520784BC29D293430080CAA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				520784BD29D293430080CAA7 /* TopNewsListViewCell.swift */,
+				520784BE29D293430080CAA7 /* BannerViewCell.swift */,
+				520784BF29D293430080CAA7 /* TopNewsCollectionViewCell.swift */,
+				520784D129D2CBEB0080CAA7 /* NewsViewCell.swift */,
+				520784D329D2CC180080CAA7 /* NewsViewCell.xib */,
+			);
+			name = Views;
+			path = BeritaLima/Modules/News/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		520784C529D2947E0080CAA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				520784C829D294DB0080CAA7 /* NewsResponse.swift */,
+				520784C629D294990080CAA7 /* News.swift */,
+				520784CC29D29AD70080CAA7 /* Media.swift */,
+				520784CA29D298FC0080CAA7 /* MediaMetadata.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		520784CE29D2C5C70080CAA7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				520784CF29D2C5E00080CAA7 /* NewsProvider.swift */,
+				520784FA29D3E7990080CAA7 /* ReadingRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		520784FC29D40DFE0080CAA7 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				520784FD29D40E180080CAA7 /* NotificationExtention.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		524DCADC29D2921D003F2F16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				520784B429D292BD0080CAA7 /* reading.storyboard */,
+				520784F529D3DE360080CAA7 /* ReadingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5256648229D1484F00CF5593 = {
+			isa = PBXGroup;
+			children = (
+				5256648D29D1484F00CF5593 /* BeritaLima */,
+				5256648C29D1484F00CF5593 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5256648C29D1484F00CF5593 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5256648B29D1484F00CF5593 /* BeritaLima.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5256648D29D1484F00CF5593 /* BeritaLima */ = {
+			isa = PBXGroup;
+			children = (
+				520784FC29D40DFE0080CAA7 /* Extention */,
+				520784CE29D2C5C70080CAA7 /* Repository */,
+				520784C529D2947E0080CAA7 /* Models */,
+				5256648E29D1484F00CF5593 /* AppDelegate.swift */,
+				5256649029D1484F00CF5593 /* SceneDelegate.swift */,
+				5203EC4829D2918900953549 /* Modules */,
+				5256649729D1485200CF5593 /* Assets.xcassets */,
+				5256649929D1485200CF5593 /* LaunchScreen.storyboard */,
+				5256649C29D1485200CF5593 /* Info.plist */,
+				520784F729D3E4780080CAA7 /* BeritaLima.xcdatamodeld */,
+			);
+			path = BeritaLima;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5256648A29D1484F00CF5593 /* BeritaLima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5256649F29D1485200CF5593 /* Build configuration list for PBXNativeTarget "BeritaLima" */;
+			buildPhases = (
+				5256648729D1484F00CF5593 /* Sources */,
+				5256648829D1484F00CF5593 /* Frameworks */,
+				5256648929D1484F00CF5593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeritaLima;
+			productName = BeritaLima;
+			productReference = 5256648B29D1484F00CF5593 /* BeritaLima.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5256648329D1484F00CF5593 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5256648A29D1484F00CF5593 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 5256648629D1484F00CF5593 /* Build configuration list for PBXProject "BeritaLima" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5256648229D1484F00CF5593;
+			productRefGroup = 5256648C29D1484F00CF5593 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5256648A29D1484F00CF5593 /* BeritaLima */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5256648929D1484F00CF5593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5256649B29D1485200CF5593 /* LaunchScreen.storyboard in Resources */,
+				5256649829D1485200CF5593 /* Assets.xcassets in Resources */,
+				520784D429D2CC180080CAA7 /* NewsViewCell.xib in Resources */,
+				520784B529D292BD0080CAA7 /* reading.storyboard in Resources */,
+				520784C129D293430080CAA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5256648729D1484F00CF5593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				520784C029D293430080CAA7 /* ViewController.swift in Sources */,
+				520784C929D294DB0080CAA7 /* NewsResponse.swift in Sources */,
+				5256648F29D1484F00CF5593 /* AppDelegate.swift in Sources */,
+				520784C329D293430080CAA7 /* BannerViewCell.swift in Sources */,
+				520784CD29D29AD70080CAA7 /* Media.swift in Sources */,
+				520784F929D3E4780080CAA7 /* BeritaLima.xcdatamodeld in Sources */,
+				520784FE29D40E180080CAA7 /* NotificationExtention.swift in Sources */,
+				5256649129D1484F00CF5593 /* SceneDelegate.swift in Sources */,
+				520784FB29D3E7990080CAA7 /* ReadingRepository.swift in Sources */,
+				520784C729D294990080CAA7 /* News.swift in Sources */,
+				520784C229D293430080CAA7 /* TopNewsListViewCell.swift in Sources */,
+				520784CB29D298FC0080CAA7 /* MediaMetadata.swift in Sources */,
+				520784F629D3DE360080CAA7 /* ReadingViewController.swift in Sources */,
+				520784D229D2CBEB0080CAA7 /* NewsViewCell.swift in Sources */,
+				520784C429D293430080CAA7 /* TopNewsCollectionViewCell.swift in Sources */,
+				520784D029D2C5E00080CAA7 /* NewsProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		520784BA29D293430080CAA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				520784BB29D293430080CAA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5256649929D1485200CF5593 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5256649A29D1485200CF5593 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5256649D29D1485200CF5593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5256649E29D1485200CF5593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525664A029D1485200CF5593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeritaLima/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swieta.BeritaLima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		525664A129D1485200CF5593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeritaLima/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swieta.BeritaLima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5256648629D1484F00CF5593 /* Build configuration list for PBXProject "BeritaLima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5256649D29D1485200CF5593 /* Debug */,
+				5256649E29D1485200CF5593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5256649F29D1485200CF5593 /* Build configuration list for PBXNativeTarget "BeritaLima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525664A029D1485200CF5593 /* Debug */,
+				525664A129D1485200CF5593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		520784F729D3E4780080CAA7 /* BeritaLima.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				520784F829D3E4780080CAA7 /* BeritaLima.xcdatamodel */,
+			);
+			currentVersion = 520784F829D3E4780080CAA7 /* BeritaLima.xcdatamodel */;
+			path = BeritaLima.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5256648329D1484F00CF5593 /* Project object */;
+}
