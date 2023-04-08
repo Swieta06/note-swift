@@ -1,7 +1,26 @@
 import SwiftUI
 
+//struct MainView:View{
+//    @AppStorage("currentPage") var currentPage=1
+//
+//    var body: some View{
+//        if currentPage > totalPage{
+//            ContentView()
+//        }else{
+//            NavigationScreen()
+//
+//        }
+//
+//
+//    }
+//}
+
 struct NavigationScreen: View {
-    @AppStorage ("currentPage") var currentPage = 1
+    @AppStorage("currentPage") var currentPage = 1
+    init() {
+           // set currentPage to 1 when the app launches
+           currentPage = 1
+       }
     var body: some View {
         ZStack{
             if currentPage == 1{
@@ -13,14 +32,18 @@ struct NavigationScreen: View {
             if currentPage == 3{
                 ScreenView(image: "image3", title: "Improve your skills", details: "Quarantine is the perfect time to spend your day learning something new, from anywhere!")
             }
+            if currentPage == 4{
+                Login()
+            }
         }
     }
 }
 
 struct NavigationScreen_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationScreen()
+      NavigationScreen()
     }
+ 
 }
 
 struct ScreenView: View {
@@ -120,6 +143,7 @@ struct ScreenView: View {
                         .background(Color("Main"))
                         .cornerRadius(40)
                         .padding(.horizontal,16)
+                        .padding(.bottom,8)
                 }else{
                     Text("Next")
                         .fontWeight(.semibold)
@@ -129,6 +153,7 @@ struct ScreenView: View {
                         .background(Color("Main"))
                         .cornerRadius(40)
                         .padding(.horizontal,16)
+                        .padding(.bottom,8)
                 }
                 
             })
@@ -139,5 +164,5 @@ struct ScreenView: View {
     }
 }
 
-let totalPage = 3
+let totalPage = 4
 

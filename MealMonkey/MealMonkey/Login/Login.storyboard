@@ -112,13 +112,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qOa-G5-5Y8">
                                 <rect key="frame" x="36" y="157" width="358" height="264"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1s-YB-MYV" customClass="InputTextField" customModule="MealMonkey" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x1s-YB-MYV" customClass="InputTextField" customModule="MealMonkey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="QGQ-ff-sL4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Zr-Rw-yLt" customClass="InputTextField" customModule="MealMonkey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="66" width="358" height="56"/>
@@ -126,7 +126,7 @@
                                             <constraint firstAttribute="height" constant="56" id="P9Q-8k-qdR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEe-2r-kdE" customClass="PrimaryButton" customModule="MealMonkey" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="132" width="358" height="56"/>
@@ -314,7 +314,7 @@
                                                             <constraint firstAttribute="height" constant="56" id="NRt-jX-m4S"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAa-d2-nTQ" customClass="InputTextField" customModule="MealMonkey" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="152" width="358" height="56"/>
@@ -322,7 +322,7 @@
                                                             <constraint firstAttribute="height" constant="56" id="DYG-yd-Y0h"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="new-password"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Check Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PzJ-Ui-kfE" customClass="InputTextField" customModule="MealMonkey" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="228" width="358" height="56"/>
@@ -462,7 +462,7 @@
             <size key="intrinsicContentSize" width="127" height="30"/>
         </designable>
         <designable name="x1s-YB-MYV">
-            <size key="intrinsicContentSize" width="32" height="34"/>
+            <size key="intrinsicContentSize" width="62.333333333333336" height="34"/>
         </designable>
         <designable name="zEe-2r-kdE">
             <size key="intrinsicContentSize" width="38" height="30"/>

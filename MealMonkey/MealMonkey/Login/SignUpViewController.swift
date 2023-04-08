@@ -42,7 +42,9 @@ class SignUpViewController: UIViewController {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
         let user=User(name: name, email: email, password: password)
+        showLoadingView(message: "Signing up...")
         ApiService.shared.singUp(user: user) { [weak self] (error) in
+            self?.hideLoadingView()
             if let error = error {
                 print(error.localizedDescription)
             }else{
@@ -52,8 +54,34 @@ class SignUpViewController: UIViewController {
     
     
 }
-
+    func validateInput() -> Bool{
+        let showAlert: (String) -> Void={(message) in
+            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert,animated: true)
+        }
+        guard let name = nameTextField.text,name.count > 2 else {
+            showAlert("Name must 2 chacracter")
+            return false
+        }
+        guard let password = passwordTextField.text,password.count > 4 else {
+            showAlert("Password must 4 or more chacracter")
+            return false
+        }
+        guard let email = emailTextField.text,email.isEmail else {
+            showAlert("email is not valid")
+            return false
+        }
+        guard checkPasswordTextField.text == passwordTextField.text else {
+            showAlert("password not matces")
+            return false
+        }
+        return true
+    }
     @IBAction func signUpButtonTapped(_ sender: Any) {
-        signUp()
+        if validateInput(){
+            signUp()
+        }
+        
     }
 }

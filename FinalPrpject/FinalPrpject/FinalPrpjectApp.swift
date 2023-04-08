@@ -11,7 +11,11 @@ import SwiftUI
 struct FinalPrpjectApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreen()
+            NavigationView{
+                SplashScreen()
+                
+            }
+            .navigationBarBackButtonHidden(true)
         }
     }
 }

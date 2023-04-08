@@ -25,6 +25,26 @@
 		5207853829D571430080CAA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207853729D571430080CAA7 /* LoginViewController.swift */; };
 		520C66B529D6B660003D133A /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C66B429D6B660003D133A /* ApiService.swift */; };
 		520C66B729D6BA4E003D133A /* AccesToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520C66B629D6BA4E003D133A /* AccesToken.swift */; };
+		52535C5629DA69D9006D5B7D /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C5529DA69D9006D5B7D /* LoadingViewController.swift */; };
+		52535C5829DA69F2006D5B7D /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52535C5729DA69F2006D5B7D /* LoadingViewController.xib */; };
+		52535C5A29DA791E006D5B7D /* StringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C5929DA791E006D5B7D /* StringExtention.swift */; };
+		52535C5D29DA8376006D5B7D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52535C5C29DA8376006D5B7D /* Home.storyboard */; };
+		52535C5F29DA8383006D5B7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C5E29DA8383006D5B7D /* HomeViewController.swift */; };
+		52535C6129DA88FF006D5B7D /* UserDefaultExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C6029DA88FF006D5B7D /* UserDefaultExtention.swift */; };
+		52535C6329DAB14F006D5B7D /* LocationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C6229DAB14F006D5B7D /* LocationViewCell.swift */; };
+		52535C6529DAB163006D5B7D /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C6429DAB163006D5B7D /* SearchViewCell.swift */; };
+		52535C6729DAB86E006D5B7D /* PopularRestoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C6629DAB86E006D5B7D /* PopularRestoViewCell.swift */; };
+		52535C7029DBB2B6006D5B7D /* CurveTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C6F29DBB2B6006D5B7D /* CurveTabBar.swift */; };
+		52535C7329DBB6E1006D5B7D /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52535C7229DBB6E1006D5B7D /* Menu.storyboard */; };
+		52535C7829DBB7D8006D5B7D /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52535C7729DBB7D8006D5B7D /* More.storyboard */; };
+		52535C7A29DBB808006D5B7D /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52535C7929DBB808006D5B7D /* Profile.storyboard */; };
+		52535C7C29DBB823006D5B7D /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52535C7B29DBB823006D5B7D /* Offers.storyboard */; };
+		52535C8229DC005D006D5B7D /* MostPopularRestoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C8129DC005D006D5B7D /* MostPopularRestoViewCell.swift */; };
+		52535C8429DC00B6006D5B7D /* RestoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C8329DC00B6006D5B7D /* RestoViewCell.swift */; };
+		52535C8629DE754F006D5B7D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C8529DE754F006D5B7D /* ProfileViewController.swift */; };
+		52535C8829DE9F18006D5B7D /* addressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C8729DE9F18006D5B7D /* addressViewController.swift */; };
+		52535C8A29DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 52535C8929DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx */; };
+		52535C8C29DEAB51006D5B7D /* IJS.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 52535C8B29DEAB51006D5B7D /* IJS.gpx */; };
 		5287A44C29D695D6006EB91E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287A44B29D695D6006EB91E /* SignUpViewController.swift */; };
 		5287A44F29D6AFEB006EB91E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287A44E29D6AFEB006EB91E /* User.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +71,26 @@
 		5207853729D571430080CAA7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		520C66B429D6B660003D133A /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		520C66B629D6BA4E003D133A /* AccesToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccesToken.swift; sourceTree = "<group>"; };
+		52535C5529DA69D9006D5B7D /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		52535C5729DA69F2006D5B7D /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		52535C5929DA791E006D5B7D /* StringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtention.swift; sourceTree = "<group>"; };
+		52535C5C29DA8376006D5B7D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		52535C5E29DA8383006D5B7D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52535C6029DA88FF006D5B7D /* UserDefaultExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultExtention.swift; sourceTree = "<group>"; };
+		52535C6229DAB14F006D5B7D /* LocationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewCell.swift; sourceTree = "<group>"; };
+		52535C6429DAB163006D5B7D /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		52535C6629DAB86E006D5B7D /* PopularRestoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRestoViewCell.swift; sourceTree = "<group>"; };
+		52535C6F29DBB2B6006D5B7D /* CurveTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveTabBar.swift; sourceTree = "<group>"; };
+		52535C7229DBB6E1006D5B7D /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		52535C7729DBB7D8006D5B7D /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		52535C7929DBB808006D5B7D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		52535C7B29DBB823006D5B7D /* Offers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
+		52535C8129DC005D006D5B7D /* MostPopularRestoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularRestoViewCell.swift; sourceTree = "<group>"; };
+		52535C8329DC00B6006D5B7D /* RestoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoViewCell.swift; sourceTree = "<group>"; };
+		52535C8529DE754F006D5B7D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		52535C8729DE9F18006D5B7D /* addressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressViewController.swift; sourceTree = "<group>"; };
+		52535C8929DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mapgpx-kedaitjikini-ibis.gpx"; sourceTree = "<group>"; };
+		52535C8B29DEAB51006D5B7D /* IJS.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = IJS.gpx; sourceTree = "<group>"; };
 		5287A44B29D695D6006EB91E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5287A44E29D6AFEB006EB91E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		779A74A9A80574CB7593EAF6 /* Pods_MealMonkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealMonkey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,16 +137,23 @@
 		5207850C29D536E80080CAA7 /* MealMonkey */ = {
 			isa = PBXGroup;
 			children = (
+				52535C7629DBB7B8006D5B7D /* More */,
+				52535C7529DBB7AD006D5B7D /* Profile */,
+				52535C7429DBB79F006D5B7D /* Offfers */,
+				52535C5B29DA8358006D5B7D /* home */,
 				520C66B329D6B624003D133A /* Network */,
 				5287A44D29D6AFD9006EB91E /* Models */,
 				5207853429D56CB60080CAA7 /* Extention */,
 				5207852D29D55E4A0080CAA7 /* Views */,
 				5207852829D543D10080CAA7 /* Login */,
 				5207852129D53D8C0080CAA7 /* Splash */,
+				52535C7129DBB6C1006D5B7D /* menu */,
 				5207852729D5437E0080CAA7 /* Main */,
 				5207850D29D536E80080CAA7 /* AppDelegate.swift */,
 				5207850F29D536E80080CAA7 /* SceneDelegate.swift */,
 				5207851629D536EA0080CAA7 /* Assets.xcassets */,
+				52535C8B29DEAB51006D5B7D /* IJS.gpx */,
+				52535C8929DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx */,
 				5207851829D536EA0080CAA7 /* LaunchScreen.storyboard */,
 				5207851B29D536EA0080CAA7 /* Info.plist */,
 			);
@@ -145,9 +192,12 @@
 		5207852D29D55E4A0080CAA7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				52535C5729DA69F2006D5B7D /* LoadingViewController.xib */,
+				52535C5529DA69D9006D5B7D /* LoadingViewController.swift */,
 				5207852E29D55E920080CAA7 /* PrimaryButton.swift */,
 				5207853029D566670080CAA7 /* SecondaryButton.swift */,
 				5207853229D569DB0080CAA7 /* InputTextField.swift */,
+				52535C6F29DBB2B6006D5B7D /* CurveTabBar.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				5207853529D56CD40080CAA7 /* UIcolorExtention.swift */,
+				52535C5929DA791E006D5B7D /* StringExtention.swift */,
+				52535C6029DA88FF006D5B7D /* UserDefaultExtention.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -166,6 +218,54 @@
 				520C66B429D6B660003D133A /* ApiService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		52535C5B29DA8358006D5B7D /* home */ = {
+			isa = PBXGroup;
+			children = (
+				52535C5C29DA8376006D5B7D /* Home.storyboard */,
+				52535C5E29DA8383006D5B7D /* HomeViewController.swift */,
+				52535C6229DAB14F006D5B7D /* LocationViewCell.swift */,
+				52535C6429DAB163006D5B7D /* SearchViewCell.swift */,
+				52535C6629DAB86E006D5B7D /* PopularRestoViewCell.swift */,
+				52535C8129DC005D006D5B7D /* MostPopularRestoViewCell.swift */,
+				52535C8329DC00B6006D5B7D /* RestoViewCell.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		52535C7129DBB6C1006D5B7D /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				52535C7229DBB6E1006D5B7D /* Menu.storyboard */,
+			);
+			path = menu;
+			sourceTree = "<group>";
+		};
+		52535C7429DBB79F006D5B7D /* Offfers */ = {
+			isa = PBXGroup;
+			children = (
+				52535C7B29DBB823006D5B7D /* Offers.storyboard */,
+			);
+			path = Offfers;
+			sourceTree = "<group>";
+		};
+		52535C7529DBB7AD006D5B7D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				52535C7929DBB808006D5B7D /* Profile.storyboard */,
+				52535C8529DE754F006D5B7D /* ProfileViewController.swift */,
+				52535C8729DE9F18006D5B7D /* addressViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		52535C7629DBB7B8006D5B7D /* More */ = {
+			isa = PBXGroup;
+			children = (
+				52535C7729DBB7D8006D5B7D /* More.storyboard */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 		5287A44D29D6AFD9006EB91E /* Models */ = {
@@ -247,10 +347,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5207851A29D536EA0080CAA7 /* LaunchScreen.storyboard in Resources */,
+				52535C8C29DEAB51006D5B7D /* IJS.gpx in Resources */,
+				52535C7829DBB7D8006D5B7D /* More.storyboard in Resources */,
+				52535C7A29DBB808006D5B7D /* Profile.storyboard in Resources */,
+				52535C5D29DA8376006D5B7D /* Home.storyboard in Resources */,
 				5207851729D536EA0080CAA7 /* Assets.xcassets in Resources */,
+				52535C7329DBB6E1006D5B7D /* Menu.storyboard in Resources */,
 				5207851529D536E80080CAA7 /* Main.storyboard in Resources */,
+				52535C8A29DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx in Resources */,
+				52535C5829DA69F2006D5B7D /* LoadingViewController.xib in Resources */,
 				5207852A29D543E10080CAA7 /* Login.storyboard in Resources */,
 				5207852429D53DBA0080CAA7 /* Splash.storyboard in Resources */,
+				52535C7C29DBB823006D5B7D /* Offers.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,18 +413,30 @@
 			files = (
 				5287A44C29D695D6006EB91E /* SignUpViewController.swift in Sources */,
 				5207853329D569DB0080CAA7 /* InputTextField.swift in Sources */,
+				52535C5629DA69D9006D5B7D /* LoadingViewController.swift in Sources */,
+				52535C5F29DA8383006D5B7D /* HomeViewController.swift in Sources */,
 				5207852F29D55E920080CAA7 /* PrimaryButton.swift in Sources */,
 				5207851229D536E80080CAA7 /* ViewController.swift in Sources */,
+				52535C5A29DA791E006D5B7D /* StringExtention.swift in Sources */,
+				52535C8229DC005D006D5B7D /* MostPopularRestoViewCell.swift in Sources */,
 				5207850E29D536E80080CAA7 /* AppDelegate.swift in Sources */,
 				5207853129D566670080CAA7 /* SecondaryButton.swift in Sources */,
 				5207852C29D543F50080CAA7 /* AuthViewController.swift in Sources */,
 				520C66B529D6B660003D133A /* ApiService.swift in Sources */,
 				5207851029D536E80080CAA7 /* SceneDelegate.swift in Sources */,
+				52535C6329DAB14F006D5B7D /* LocationViewCell.swift in Sources */,
 				5287A44F29D6AFEB006EB91E /* User.swift in Sources */,
+				52535C8829DE9F18006D5B7D /* addressViewController.swift in Sources */,
 				5207853629D56CD40080CAA7 /* UIcolorExtention.swift in Sources */,
 				520C66B729D6BA4E003D133A /* AccesToken.swift in Sources */,
+				52535C6729DAB86E006D5B7D /* PopularRestoViewCell.swift in Sources */,
+				52535C6529DAB163006D5B7D /* SearchViewCell.swift in Sources */,
 				5207853829D571430080CAA7 /* LoginViewController.swift in Sources */,
+				52535C7029DBB2B6006D5B7D /* CurveTabBar.swift in Sources */,
 				5207852629D542080080CAA7 /* SplashViewController.swift in Sources */,
+				52535C8629DE754F006D5B7D /* ProfileViewController.swift in Sources */,
+				52535C8429DC00B6006D5B7D /* RestoViewCell.swift in Sources */,
+				52535C6129DA88FF006D5B7D /* UserDefaultExtention.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,26 +7,24 @@
 
 import SwiftUI
 
-struct MainButton: View {
+struct MainBottonComponent: View {
     var text:String
     var backgroundColor:Color=Color("Main")
     var body: some View {
         Text(text)
-            .fontWeight(.bold)
-            .font(.system(size: 20))
-            .padding(EdgeInsets(top: 3, leading: 120, bottom: 3, trailing: 120))
+            .fontWeight(.semibold)
+            .frame(width: 343, height: 53)
+            //.padding()
             .foregroundColor(.white)
-            .padding()
-            .background(backgroundColor)
-            .cornerRadius(20)
-
-            
+            .background(Color("Main"))
+            .cornerRadius(16)
+           // .padding(.horizontal,16)
         
     }
 }
 
 struct MainButton_Previews: PreviewProvider {
     static var previews: some View {
-        MainButton(text: "Button")
+        MainBottonComponent(text: "Button")
     }
 }

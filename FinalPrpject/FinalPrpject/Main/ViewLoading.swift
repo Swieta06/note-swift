@@ -16,11 +16,3 @@ var loadingView: some View {
         .cornerRadius(10)
     
 }
-
-
-
-//struct ViewLoading_Previews:PreviewProvider{
-//    static var previews: some View {
-//       loadingView
-//    }
-//}

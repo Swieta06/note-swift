@@ -11,9 +11,9 @@ struct MoveScreen:View{
     var body: some View{
         NavigationView{
             SplashScreen()
+            
         }
      
-        
     }
 }
 
@@ -22,7 +22,7 @@ struct SplashScreen: View {
     @State private var isActive=false
     var body: some View {
             VStack{
-                Image("Content")
+                ImageComponent(ImageName:"Content")
                 if isLoading{
                     ProgressView()
                         .progressViewStyle(CircularProgressViewStyle(tint: .red))
@@ -32,26 +32,27 @@ struct SplashScreen: View {
                         .cornerRadius(10)
                 }
                 
+                
             }
          .onAppear{startLoadView()}
-//                   .background(
-//                       NavigationLink(
-//                           destination: ContentView(),
-//                           isActive: $isActive,
-//                           label: { EmptyView() }
-//                       )
-//                       .frame(width: 0, height: 0)
-//                       .hidden()
-//                   )
+                   .background(
+                       NavigationLink(
+                           destination: NavigationScreen(),
+                           isActive: $isActive,
+                           label: { EmptyView() }
+                       )
+                       .frame(width: 0, height: 0)
+                      .hidden()
+                   )
             //ContentView()
     }
     func startLoadView(){
         isLoading=true
-        DispatchQueue.main.asyncAfter(deadline: .now()+3){
-        //isLoading=false
+        DispatchQueue.main.asyncAfter(deadline: .now()+2){
+            isLoading=false
             isActive=true
-            //NavigationScreen()
-            //isLoading=false
+            print(isActive)
+
         }
     }
   

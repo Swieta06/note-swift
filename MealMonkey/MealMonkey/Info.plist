@@ -23,5 +23,13 @@
 	</dict>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>NSCameraUsageDescription</key>
+	<string>MealMonkey need to camera</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>MealMonkey need to photo</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>location</string>
 </dict>
 </plist>
