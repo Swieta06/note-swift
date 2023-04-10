@@ -11,10 +11,15 @@ struct QuizView: View {
     @EnvironmentObject var quizMnager : QuizManager
     var body: some View {
         if quizMnager.reachedEbd{
-            VStack(spacing:20){
-                Text("Quiz Game")
+            VStack(spacing:10){
+                TitleComponen(text: "Result")
+                ImageComponent(ImageName: "EndQuiz")
+                //TitleComponen(text: "Congratulations")
+                //SubtitleComponent(text: "Congratulations, you completed the game!")
                 Text("Congratulations, you completed the game!")
                 Text("your scored \(quizMnager.score) out of \(quizMnager.length)")
+                    .bold()
+                    .padding()
                 Button{
                     Task.init{
                         await quizMnager.fectQuiz()
@@ -22,10 +27,12 @@ struct QuizView: View {
                 }label: {
                     MainBottonComponent(text: "Play Again")
                 }
+                Spacer()
             }
             .foregroundColor(Color("Secondary"))
             .padding()
             .frame(maxWidth: .infinity,maxHeight: .infinity)
+            .navigationBarHidden(true)
         }else{
             QuestionView()
                 .environmentObject(quizMnager)

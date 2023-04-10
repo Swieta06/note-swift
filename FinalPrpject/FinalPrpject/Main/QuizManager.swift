@@ -26,7 +26,9 @@ class QuizManager: ObservableObject{
     }
     
     func fectQuiz() async {
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=10") else {fatalError("Missing URL")}
+//        https://opentdb.com/api.php?amount=10&category=18
+//         https://opentdb.com/api.php?amount=10
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=10&category=18") else {fatalError("Missing URL")}
         let urlRequest = URLRequest(url: url)
         do{
            let (data,response) = try await URLSession.shared.data(for: urlRequest)

@@ -45,6 +45,9 @@
 		52535C8829DE9F18006D5B7D /* addressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535C8729DE9F18006D5B7D /* addressViewController.swift */; };
 		52535C8A29DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 52535C8929DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx */; };
 		52535C8C29DEAB51006D5B7D /* IJS.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 52535C8B29DEAB51006D5B7D /* IJS.gpx */; };
+		52535CA229E3A8C7006D5B7D /* PopularRestoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535CA129E3A8C7006D5B7D /* PopularRestoViewController.swift */; };
+		52535CA429E3A92B006D5B7D /* PopularRestosItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535CA329E3A92B006D5B7D /* PopularRestosItemViewCell.swift */; };
+		52535CA629E3C199006D5B7D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52535CA529E3C199006D5B7D /* Restaurant.swift */; };
 		5287A44C29D695D6006EB91E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287A44B29D695D6006EB91E /* SignUpViewController.swift */; };
 		5287A44F29D6AFEB006EB91E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5287A44E29D6AFEB006EB91E /* User.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +94,9 @@
 		52535C8729DE9F18006D5B7D /* addressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressViewController.swift; sourceTree = "<group>"; };
 		52535C8929DEA944006D5B7D /* mapgpx-kedaitjikini-ibis.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "mapgpx-kedaitjikini-ibis.gpx"; sourceTree = "<group>"; };
 		52535C8B29DEAB51006D5B7D /* IJS.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = IJS.gpx; sourceTree = "<group>"; };
+		52535CA129E3A8C7006D5B7D /* PopularRestoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRestoViewController.swift; sourceTree = "<group>"; };
+		52535CA329E3A92B006D5B7D /* PopularRestosItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularRestosItemViewCell.swift; sourceTree = "<group>"; };
+		52535CA529E3C199006D5B7D /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		5287A44B29D695D6006EB91E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5287A44E29D6AFEB006EB91E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		779A74A9A80574CB7593EAF6 /* Pods_MealMonkey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MealMonkey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +236,8 @@
 				52535C6629DAB86E006D5B7D /* PopularRestoViewCell.swift */,
 				52535C8129DC005D006D5B7D /* MostPopularRestoViewCell.swift */,
 				52535C8329DC00B6006D5B7D /* RestoViewCell.swift */,
+				52535CA129E3A8C7006D5B7D /* PopularRestoViewController.swift */,
+				52535CA329E3A92B006D5B7D /* PopularRestosItemViewCell.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -273,6 +281,7 @@
 			children = (
 				5287A44E29D6AFEB006EB91E /* User.swift */,
 				520C66B629D6BA4E003D133A /* AccesToken.swift */,
+				52535CA529E3C199006D5B7D /* Restaurant.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52535CA629E3C199006D5B7D /* Restaurant.swift in Sources */,
 				5287A44C29D695D6006EB91E /* SignUpViewController.swift in Sources */,
 				5207853329D569DB0080CAA7 /* InputTextField.swift in Sources */,
 				52535C5629DA69D9006D5B7D /* LoadingViewController.swift in Sources */,
@@ -420,6 +430,7 @@
 				52535C5A29DA791E006D5B7D /* StringExtention.swift in Sources */,
 				52535C8229DC005D006D5B7D /* MostPopularRestoViewCell.swift in Sources */,
 				5207850E29D536E80080CAA7 /* AppDelegate.swift in Sources */,
+				52535CA229E3A8C7006D5B7D /* PopularRestoViewController.swift in Sources */,
 				5207853129D566670080CAA7 /* SecondaryButton.swift in Sources */,
 				5207852C29D543F50080CAA7 /* AuthViewController.swift in Sources */,
 				520C66B529D6B660003D133A /* ApiService.swift in Sources */,
@@ -437,6 +448,7 @@
 				52535C8629DE754F006D5B7D /* ProfileViewController.swift in Sources */,
 				52535C8429DC00B6006D5B7D /* RestoViewCell.swift in Sources */,
 				52535C6129DA88FF006D5B7D /* UserDefaultExtention.swift in Sources */,
+				52535CA429E3A92B006D5B7D /* PopularRestosItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

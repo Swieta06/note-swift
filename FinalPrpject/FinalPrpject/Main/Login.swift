@@ -27,16 +27,19 @@ struct Login: View {
                     Image("gmail")
                 }
                 TextfieldComponent(text: $username, placeholder: "Username")
-                
+                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: CGFloat(wrongUsername)))
                 TextfieldComponent(text: $password, placeholder: "Password")
-                    .border(.red,width: CGFloat(wrongPassword))
-                Button("Login"){
+                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: CGFloat(wrongPassword)))
+                    //.border(.red,width: CGFloat(wrongPassword))
+                Button(action: {
                     authenticateUser(username: username, password: password)
+                }) {
+                    Text("Login")
+                        .foregroundColor(.white)
+                        .frame(width: 343, height: 53)
+                        .background(Color("Main"))
+                        .cornerRadius(16)
                 }
-                .frame(width: 343, height: 53)
-                .foregroundColor(.white)
-                .background(Color("Main"))
-                .cornerRadius(16)
                 NavigationLink(destination: Home(), isActive: $showingLoginScreen){
                     EmptyView()
                 }

@@ -8,4 +8,5 @@ target 'MealMonkey' do
   # Pods for MealMonkey
 pod 'Alamofire'
 pod 'IQKeyboardManagerSwift'
+pod 'Kingfisher'
 end

@@ -53,4 +53,19 @@ class ApiService{
                 }
             }
     }
+    func loadPopularResto(completion: @escaping([Restaurant]) -> Void){
+        let url = "https://x8ki-letl-twmt.n7.xano.io/api:KJs76dnG/restaurant/popular"
+        AF.request(url)
+            .validate()
+            .responseDecodable(of:[Restaurant].self){ response in
+                switch response.result{
+                case .success(let restos):
+                    completion(restos)
+                case .failure:
+                    completion([])
+                    
+                }
+                
+            }
+    }
 }

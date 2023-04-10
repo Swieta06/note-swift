@@ -21,7 +21,8 @@ struct Home: View {
                     Image(systemName: "person")
                     Text("Profile")
                 }
-                Text("setting")
+                //Text("setting")
+                SettingsView()
                 .tabItem{
                     Image(systemName: "gearshape")
                     Text("Settings")

@@ -36,6 +36,7 @@ struct NavigationScreen: View {
                 Login()
             }
         }
+        .navigationBarHidden(true)
     }
 }
 

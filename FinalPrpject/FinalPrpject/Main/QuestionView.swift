@@ -12,9 +12,14 @@ struct QuestionView: View {
     var body: some View {
         VStack(spacing: 40){
             HStack{
-                Text("Quiz" )
+                //Text("Quiz" )
+                TitleComponen(text: "Quiz")
+                    .foregroundColor(Color("Secondary"))
                 Spacer()
-                Text("\(quizMnager.index+1) of \(quizMnager.length)")
+                Text("\(quizMnager.index + 1) of \(quizMnager.length)")
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("Main"))
+                   
             }
             ProgressBarComponent(progress: quizMnager.progress)
             VStack(alignment: .leading,spacing: 20){
@@ -22,6 +27,7 @@ struct QuestionView: View {
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor(.gray)
+                
                 ForEach(quizMnager.answerChoice, id:\.id){ answer in
                     AnswerRow(answer: answer)
                         .environmentObject(quizMnager)
@@ -39,7 +45,7 @@ struct QuestionView: View {
         }
         .padding()
         .frame(maxWidth: .infinity,maxHeight: .infinity)
-        .navigationBarHidden(true)
+        //.navigationBarHidden(true)
     }
 }
 

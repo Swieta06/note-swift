@@ -19,10 +19,11 @@ struct Courses: View {
                     Text("Swieta Nurjanah Hetty")
                         .font(.title)
                         .fontWeight(.bold)
-                    VStack(alignment: .leading,spacing: 10){
+                    VStack(alignment: .leading,spacing: 15){
                         HStack(alignment: .center){
                             Text("Categori : ")
                             CategoryButtonComponent(text: "#Css")
+                         
                             CategoryButtonComponent(text: "#Swift")
                             CategoryButtonComponent(text:"#Html" )
                         }
@@ -30,7 +31,7 @@ struct Courses: View {
                             QuizView()
                                 .environmentObject(quizManager)
                         }label: {
-                            CardCrouseComponent(image: "Course_Image", Title: "UI", subtitle: "Advanced mobile interface design")
+                            CardCrouseComponent(image: "Course_Image", Title: "Quiz", subtitle: "Let’s put your memory on this topic test. Solve tasks and check your knowledge.")
                         }
                         
                             

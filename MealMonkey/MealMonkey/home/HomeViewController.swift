@@ -31,6 +31,9 @@ class HomeViewController: UIViewController{
         tableView.dataSource=self
         tableView.delegate=self
     }
+    @objc func showPopularRestos(_ sender:Any){
+        showPopularRestoViewController()
+    }
 }
 
 extension HomeViewController:UITableViewDataSource{
@@ -102,6 +105,7 @@ extension HomeViewController: UITableViewDelegate{
             switch value{
             case .popular:
                 lable.text = "Popular Restaurants"
+                button.addTarget(self, action: #selector(self.showPopularRestos(_:)), for: .touchUpInside)
             case .mostPopular:
                 lable.text = "Popular Restaurants"
             default:
