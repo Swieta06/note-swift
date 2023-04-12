@@ -350,7 +350,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zct-5B-af7">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="110" width="393" height="742"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="26W-2Y-9Ei">
                                     <size key="itemSize" width="257" height="371"/>
@@ -440,18 +440,33 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EMo-qo-6sE">
+                                <rect key="frame" x="20" y="79" width="353" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Tiga"/>
+                                </segments>
+                                <connections>
+                                    <action selector="filterChanged:" destination="dhG-Fj-RT4" eventType="valueChanged" id="aEg-Wc-Vxp"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UO8-6w-79O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="zct-5B-af7" firstAttribute="top" secondItem="176-yz-htn" secondAttribute="top" id="21W-hg-Sgf"/>
                             <constraint firstAttribute="bottom" secondItem="zct-5B-af7" secondAttribute="bottom" id="3YE-eO-AWy"/>
+                            <constraint firstItem="EMo-qo-6sE" firstAttribute="leading" secondItem="UO8-6w-79O" secondAttribute="leading" constant="20" id="Bd2-IV-8aY"/>
+                            <constraint firstItem="UO8-6w-79O" firstAttribute="trailing" secondItem="EMo-qo-6sE" secondAttribute="trailing" constant="20" id="fVq-nI-qkq"/>
                             <constraint firstItem="zct-5B-af7" firstAttribute="leading" secondItem="UO8-6w-79O" secondAttribute="leading" id="fyo-Uq-Tcd"/>
                             <constraint firstAttribute="trailing" secondItem="zct-5B-af7" secondAttribute="trailing" id="k4D-lD-gSo"/>
+                            <constraint firstItem="EMo-qo-6sE" firstAttribute="top" secondItem="UO8-6w-79O" secondAttribute="top" constant="20" id="m1R-aa-bFM"/>
+                            <constraint firstItem="zct-5B-af7" firstAttribute="top" secondItem="EMo-qo-6sE" secondAttribute="bottom" id="w0u-A6-VmA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="zct-5B-af7" id="Bej-TX-IOn"/>
+                        <outlet property="segmentedController" destination="EMo-qo-6sE" id="Uy8-b0-eRo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hV-p1-z2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

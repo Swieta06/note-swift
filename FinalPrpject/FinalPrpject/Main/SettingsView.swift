@@ -22,8 +22,9 @@ struct SettingsView: View {
                     VStack(spacing:8){
                         SettingsRow(name: "Developer", content: "Swieta")
                         SettingsRow(name: "Design",linkLable: "UI design",linkDestination: "uistore.design")
-                        SettingsRow(name: "Compatibility",content: "iOS 15")
                         SettingsRow(name: "Api",linkLable: "Open Trivia",linkDestination: "opentdb.com")
+                        SettingsRow(name: "Compatibility",content: "iOS 15")
+                        
                         SettingsRow(name: "Version",content: "1.1.0")
                     }
                     

@@ -9,10 +9,21 @@ import UIKit
 import Kingfisher
 class PopularRestoViewController: UIViewController {
 
+    @IBOutlet weak var segmentedController: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
     weak var refresh:UIRefreshControl!
     
+    var allrestos:[Restaurant] = []
     var restos: [Restaurant] = []
+    var categories: [String] = [
+    "All",
+    "western",
+    "Indian",
+    "Coffee",
+    "Italian",
+    "Sri Lankan"
+    ]
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -22,7 +33,8 @@ class PopularRestoViewController: UIViewController {
     func loadRestos(){
         ApiService.shared.loadPopularResto{[weak self] (restos) in
             self?.refresh.endRefreshing()
-            self?.restos=restos
+            self?.allrestos=restos
+            self?.filterResto()
             self?.collectionView.reloadData()
         }
         
@@ -35,6 +47,26 @@ class PopularRestoViewController: UIViewController {
         collectionView.refreshControl=refreshControl
         self.refresh=refreshControl
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        segmentedController.removeAllSegments()
+        
+        for i in 0..<categories.count{
+            segmentedController.insertSegment(withTitle: categories[i], at: i, animated: false)
+        }
+        segmentedController.selectedSegmentIndex = 0
+    }
+    func filterResto(){
+        let category=categories[segmentedController.selectedSegmentIndex]
+        if category == "All"{
+            restos = allrestos
+        }else{
+            restos=allrestos.filter({ restaurant in
+                return restaurant.categoryName == category
+            })
+          }
+        }
+    @IBAction func filterChanged(_ sender: Any) {
+        filterResto()
+        collectionView.reloadData()
     }
     @objc func refresh(_ sender:Any){
         loadRestos()

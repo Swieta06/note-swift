@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Login: View {
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     @State private var username: String = ""
     @State private var password: String = ""
     @State private var wrongUsername: Int = 0
@@ -26,6 +28,10 @@ struct Login: View {
                     Image("instagram")
                     Image("gmail")
                 }
+                //------
+                .alert(isPresented: $showAlert) {
+                        Alert(title: Text("Error"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+                    }
                 TextfieldComponent(text: $username, placeholder: "Username")
                     .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: CGFloat(wrongUsername)))
                 TextfieldComponent(text: $password, placeholder: "Password")
@@ -63,21 +69,38 @@ struct Login: View {
     }
     
     func authenticateUser(username:String,password:String){
-  
-        if(username.lowercased()=="swieta"){
+        if(username.lowercased() == "swieta") {
             wrongUsername = 0
-            if password.lowercased()=="password"{
+            if(password.lowercased() == "password") {
                 wrongPassword = 0
-                //Home()
+                showingLoginScreen = true
                 print("berhasil login")
-                showingLoginScreen=true
-                //showingloginscree
-            }else{
+            } else {
                 wrongPassword = 1
+                showAlert = true
+                alertMessage = "Wrong password"
             }
-        }else{
+        } else {
             wrongUsername = 1
+            showAlert = true
+            alertMessage = "Wrong username"
         }
+//        if(username.lowercased()=="swieta"){
+//            wrongUsername = 0
+//            if password.lowercased()=="password"{
+//                wrongPassword = 0
+//                //Home()
+//                print("berhasil login")
+//                showingLoginScreen=true
+//                //showingloginscree
+//            }else{
+//                wrongPassword = 1
+//
+//            }
+//        }else{
+//            wrongUsername = 1
+//
+//        }
         
     }
 }
