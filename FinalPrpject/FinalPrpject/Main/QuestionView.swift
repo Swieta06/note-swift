@@ -27,6 +27,7 @@ struct QuestionView: View {
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor(.gray)
+                    .lineLimit(10)
                 
                 ForEach(quizMnager.answerChoice, id:\.id){ answer in
                     AnswerRow(answer: answer)

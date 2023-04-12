@@ -13,10 +13,13 @@ struct QuizView: View {
         if quizMnager.reachedEbd{
             VStack(spacing:10){
                 TitleComponen(text: "Result")
+                    .foregroundColor(Color("Main"))
                 ImageComponent(ImageName: "EndQuiz")
                 //TitleComponen(text: "Congratulations")
                 //SubtitleComponent(text: "Congratulations, you completed the game!")
                 Text("Congratulations, you completed the game!")
+                    .bold()
+                    .fontWeight(.heavy)
                 Text("your scored \(quizMnager.score) out of \(quizMnager.length)")
                     .bold()
                     .padding()

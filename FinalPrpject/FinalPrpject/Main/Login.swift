@@ -16,6 +16,7 @@ struct Login: View {
     @State private var wrongPassword: Int = 0
     @State private var showingLoginScreen: Bool = false
     @State private var isSignUpViewPresented: Bool=false
+    @State private var isSecured:Bool=true
     var body: some View {
         NavigationView{
             VStack(spacing:16){
@@ -34,9 +35,20 @@ struct Login: View {
                     }
                 TextfieldComponent(text: $username, placeholder: "Username")
                     .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: CGFloat(wrongUsername)))
-                TextfieldComponent(text: $password, placeholder: "Password")
+//                TextfieldComponent(text: $password, placeholder: "Password")
+//                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: CGFloat(wrongPassword)))
+                
+                
+                        //.border(.red,width: CGFloat(wrongPassword))
+                SecureField("Password", text: $password)
+                    .padding()
+                    .autocapitalization(.none)
+                    .frame(width: 343, height: 53)
+                    .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray, lineWidth: 1))
                     .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.red, lineWidth: CGFloat(wrongPassword)))
-                    //.border(.red,width: CGFloat(wrongPassword))
+
+                
+                
                 Button(action: {
                     authenticateUser(username: username, password: password)
                 }) {

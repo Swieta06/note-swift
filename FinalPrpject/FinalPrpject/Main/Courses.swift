@@ -92,6 +92,13 @@ struct Courses: View {
                                 }) {
                                     CardCrouseComponent(image: "Course_image4", Title: "Css", subtitle: "CSS is the language we use to style an HTML document")
                                 }
+                                Button(action: {
+                                    if let url = URL(string: "https://www.w3schools.com/js/") {
+                                        UIApplication.shared.open(url)
+                                    }
+                                }) {
+                                    CardCrouseComponent(image: "Course_Image3", Title: "JavaScript", subtitle: "JavaScript is the programming language of the Web.")
+                                }
                             default:
                                 NavigationLink{
                                     QuizView()
@@ -112,6 +119,13 @@ struct Courses: View {
                                     }
                                 }) {
                                     CardCrouseComponent(image: "Course_image4", Title: "Css", subtitle: "CSS is the language we use to style an HTML document")
+                                }
+                                Button(action: {
+                                    if let url = URL(string: "https://www.w3schools.com/js/") {
+                                        UIApplication.shared.open(url)
+                                    }
+                                }) {
+                                    CardCrouseComponent(image: "Course_Image3", Title: "JavaScript", subtitle: "JavaScript is the programming language of the Web.")
                                 }
                                // EmptyView()
                                 
